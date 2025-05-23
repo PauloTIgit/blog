@@ -1,0 +1,40 @@
+:root {
+  /* Cores principais */
+  --color-primary: #6b46c1;
+  --color-primary-light: #9f7aea;
+  --color-primary-dark: #553c9a;
+
+  --color-secondary: #718096;
+  --color-secondary-light: #a0aec0;
+  --color-secondary-dark: #4a5568;
+
+  --color-background: #faf5ff;
+  --color-surface: #ffffff;
+
+  --color-text-primary: #2d3748;
+  --color-text-secondary: #4a5568;
+  --color-text-light: #f8f8f8;
+
+  --color-link: var(--color-primary);
+  --color-link-hover: var(--color-primary-dark);
+
+  /* Espaçamentos */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+
+  /* Fontes */
+  --font-family-base: 'Inter', sans-serif;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.5rem;
+
+  /* Background pattern */
+  --bg-pattern: repeating-linear-gradient(45deg,
+      #e9d8fd 0,
+      #e9d8fd 10px,
+      #d6bcfa 10px,
+      #d6bcfa 20px);
+}

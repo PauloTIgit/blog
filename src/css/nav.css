@@ -1,0 +1,57 @@
+/* NAVEGAÇÃO */
+.nav {
+  position: sticky;
+  top: 0;
+  background-color: var(--color-surface);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  z-index: 200;
+}
+
+/* Links comuns */
+.nav a {
+  color: var(--color-link);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: var(--color-link-hover);
+}
+
+/* Menu desktop */
+.nav .md\\:flex {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav .md\\:flex {
+    display: flex;
+  }
+
+  .nav .md\\:hidden {
+    display: none !important;
+  }
+}
+
+/* Menu mobile */
+#mobileMenu {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: var(--spacing-md);
+}
+
+#mobileMenu.hidden {
+  display: none;
+}
+
+/* Ícone do botão hamburguer */
+#menuToggle {
+  cursor: pointer;
+  color: var(--color-link);
+}
+
+/* Animação (opcional) */
+#menuToggle:active {
+  transform: scale(0.95);
+}

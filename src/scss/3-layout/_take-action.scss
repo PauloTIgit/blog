@@ -1,0 +1,91 @@
+.take-action {
+  background-color: $main-color;
+
+  .section-title {
+    color: $white-color;
+    text-align: #{$start-direction};
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .section-subtitle {
+    color: $white-color;
+    opacity: 0.75;
+    text-align: #{$start-direction};
+    font-size: 1rem;
+    font-weight: 400;
+    width: 100%;
+    padding: 0;
+  }
+
+  .cta-wrapper {
+    .cta-title {
+      text-transform: capitalize;
+
+      @include ma-md-screens {
+        margin-bottom: 1.25rem;
+      }
+    }
+    .form-wrapper {
+      position: relative;
+    }
+    .email-capture-form {
+      position: relative;
+
+      .email-lbl {
+        text-transform: capitalize;
+        display: block;
+        font-size: 0.75rem;
+        font-weight: 600;
+        margin: 0 0 0.5rem 0;
+        // text-align: left //Always text-align:left
+        text-align: #{$start-direction}; //Always text-align:left
+      }
+
+      .captured-email {
+        display: inline-block;
+        width: 100%;
+        outline: none;
+        padding: 0.75rem 1rem;
+        border: 2px solid $main-color;
+        border-radius: 0.25rem;
+        color: $main-color;
+      }
+
+      .email-warning {
+        position: absolute;
+        bottom: -1.25rem;
+        left: 0; //Always this span on the left
+        font-size: 0.75rem;
+        font-style: italic;
+        color: $grey-color;
+      }
+
+      .subscripe-btn {
+        position: absolute;
+        #{$start-direction}: auto;
+        #{$end-direction}: 0;
+        height: 100%;
+        top: 0;
+        display: block;
+        margin: 0 auto;
+        border: none;
+        padding: 0 1.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        cursor: pointer;
+        background-color: rgba($black-color, 1);
+        color: $white-color;
+        @include ma-transition(background-color, 0.3s);
+
+        &:hover {
+          background-color: rgba($black-color, 0.85);
+        }
+
+        &:focus {
+          outline: none !important;
+        }
+      }
+    }
+  }
+}
