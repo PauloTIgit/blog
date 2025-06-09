@@ -69,3 +69,15 @@ export function ajax({ url, method, contentType, data, onSuccess }) {
     }
   });
 }
+
+
+export function navAdmin(secionId, linkId) {
+  document.addEventListener('DOMContentLoaded', function () {
+    const secionAdmin = document.getElementById(secionId);
+    const adminLink = document.getElementById(linkId);
+    if (secionAdmin && secionAdmin.offsetParent !== null && adminLink) {
+      adminLink.classList.add('text-blue-600');
+      adminLink.classList.add('font-medium');
+    }
+  });
+}

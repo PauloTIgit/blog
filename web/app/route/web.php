@@ -50,23 +50,6 @@ rota('/valid', function () {
   }
 });
 
-rota('/client', function () {
-  Auth('/client');
-
-  if (isset($_SESSION['usuario']) && $_SESSION['usuario']['painel'] == 'admin') {
-    view('painel/admin');
-  }
-  view('painel/client/index');
-});
-
-rota('/admin', function () {
-  Auth('/admin');
-  if ($_SESSION['usuario']['painel'] == 'client') {
-    view('painel/client');
-  }
-  view('painel/admin');
-});
-
 rota('/404', function () {
   view('404');
 });
@@ -88,4 +71,8 @@ rota('/sair', function () {
   header("Location: ./login");
 });
 
+
+
+router('client');
+router('admin');
 router('artigo');
