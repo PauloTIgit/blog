@@ -6,8 +6,11 @@
  * |            V.2              |
  * |.............................|
  * autor - Paulo Fernando Ferreira Pires
- * web e System
+ * creation - 11/04/2024 at 21:22
+ * 
  */
+session_start();
 
+include './autoload.class.php';
 
-header("Location: ./web/");
+new Route();
